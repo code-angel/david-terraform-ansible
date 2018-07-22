@@ -11,7 +11,7 @@ variable "client_id" {
 
 variable "client_secret" {
   description = ""
-  default     = "Ibaka#*Me"
+  default     = "e678cec9-1ddb-4b0f-a9bc-f6f0a88a8760"
 }
 
 variable "tenant_id" {
