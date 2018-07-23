@@ -1,22 +1,22 @@
 #AzureRM
 variable "subscription_id" {
   description = ""
-  default     = "d6c10e6e-3d5a-481e-82e7-e00817b6179a"
+  default     = ""
 }
 
 variable "client_id" {
   description = ""
-  default     = "b7f98922-f054-440c-8970-a7d0f9c5b369"
+  default     = ""
 }
 
 variable "client_secret" {
   description = ""
-  default     = "e678cec9-1ddb-4b0f-a9bc-f6f0a88a8760"
+  default     = ""
 }
 
 variable "tenant_id" {
   description = ""
-  default     = "fb95c048-33df-44b0-b3d8-76bc1ca56f9a"
+  default     = ""
 }
 
 variable "resource_group_name" {
@@ -26,27 +26,27 @@ variable "resource_group_name" {
 
 variable "location" {
   description = "westus2"
-  default     = "westus2"
+  default     = ""
 }
 
 variable "vnet_cidr" {
   description = "Virtual Network"
-  default     = "10.0.0.0/16"
+  default     = ""
 }
 
 variable "subnet1_cidr" {
   description = "Subnet 1"
-  default     = "10.0.0.0/24"
+  default     = ""
 }
 
 variable "subnet2_cidr" {
   description = "Subnet 2"
-  default     = "10.0.2.0/24"
+  default     = ""
 }
 
 variable "environment" {
   description = "Define the environment to deploy to"
-  default     = "AzureCloud"
+  default     = ""
 }
 
 variable "vm_username" {
