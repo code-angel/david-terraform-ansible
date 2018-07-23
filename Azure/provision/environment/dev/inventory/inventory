@@ -1,4 +1,5 @@
-web1 ansible_ssh_host={host}
+web1 ansible_ssh_host=13.77.156.224
+
 [webservers]
 web1
 

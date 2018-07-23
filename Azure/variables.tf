@@ -21,15 +21,17 @@ variable "tenant_id" {
 
 variable "resource_group_name" {
   description = "Resource Group"
+  default     = "david-terraform-test1"
 }
 
 variable "location" {
   description = "westus2"
+  default     = "westus2"
 }
 
 variable "vnet_cidr" {
   description = "Virtual Network"
-  default     = "ReactorNetwork1"
+  default     = "10.0.0.0/16"
 }
 
 variable "subnet1_cidr" {
@@ -39,7 +41,7 @@ variable "subnet1_cidr" {
 
 variable "subnet2_cidr" {
   description = "Subnet 2"
-  default     = "192.168.0.0/16"
+  default     = "10.0.2.0/24"
 }
 
 variable "environment" {

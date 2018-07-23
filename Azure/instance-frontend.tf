@@ -129,11 +129,15 @@ resource "azurerm_virtual_machine" "demo_frontend" {
   }
 
   provisioner "local-exec" {
-    command = "./provision/environment/dev/scripts/dynamicinventory.sh"
+    command = "cp ./provision/environment/dev/inventory/inventory.backup ./provision/environment/dev/inventory/inventory"
   }
 
   provisioner "local-exec" {
-    command = "sleep 180;sed -i 's/{host}/${azurerm_public_ip.demo_pip.ip_address}/g' ./provision/environment/dev/inventory/inventory"
+    command = "sleep 5s"
+  }
+
+  provisioner "local-exec" {
+    command = "sed -i 's/{host}/${azurerm_public_ip.demo_pip.ip_address}/g' ./provision/environment/dev/inventory/inventory"
   }
 
   provisioner "local-exec" {
